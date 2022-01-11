@@ -7,7 +7,7 @@
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
-      transparent
+      rgba(47, 48, 58, 0.4)
     ),
     url(../images/head-tab.jpg);
   background-repeat: no-repeat;
@@ -18,11 +18,10 @@
   margin-left: auto;
   margin-right: auto;
   @media screen and (max-width: 480px) {
-    // max-width: 768px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
-        transparent
+        rgba(47, 48, 58, 0.4)
       ),
       url(../images/head-mob.jpg);
   }
@@ -30,7 +29,7 @@
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),
-        transparent
+        rgba(47, 48, 58, 0.4)
       ),
       url(../images/head-desk.jpg);
   }

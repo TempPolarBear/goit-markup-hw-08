@@ -22,12 +22,14 @@
 .mobile-menu {
   position: fixed;
   top: 0;
+  left: 0;
   background-color: #fff;
   width: 100vw;
   height: 100vh;
-  padding-top: 48px;
-  padding-left: 40px;
+  padding: 48px 0 48px 40px;
   z-index: 5;
+  display: flex;
+  flex-direction: column;
 }
 
 .mobile-close {
@@ -47,7 +49,7 @@
   }
 }
 
-.mobile-nav {
+.mobile-nav__list {
   font-size: 40px;
   font-weight: 500;
   line-height: 1.17;
@@ -73,7 +75,7 @@
 }
 
 .mobile-contacts {
-  margin-top: 302px;
+  margin-top: auto;
 }
 
 .mobile-contacts__item:not(:last-child) {

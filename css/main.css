@@ -266,7 +266,7 @@ header {
   padding: 118px 0;
   text-align: center;
   background-color: rgba(47, 48, 58, 0.4);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), transparent), url(../images/head-tab.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/head-tab.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -277,12 +277,12 @@ header {
 }
 @media screen and (max-width: 480px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), transparent), url(../images/head-mob.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/head-mob.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), transparent), url(../images/head-desk.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/head-desk.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -638,6 +638,7 @@ header {
 @media screen and (min-width: 1200px) {
   .clients__title {
     font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 
@@ -1306,12 +1307,14 @@ header {
 .mobile-menu {
   position: fixed;
   top: 0;
+  left: 0;
   background-color: #fff;
   width: 100vw;
   height: 100vh;
-  padding-top: 48px;
-  padding-left: 40px;
+  padding: 48px 0 48px 40px;
   z-index: 5;
+  display: flex;
+  flex-direction: column;
 }
 
 .mobile-close {
@@ -1331,7 +1334,7 @@ header {
   fill: var(--brand-color-focus);
 }
 
-.mobile-nav {
+.mobile-nav__list {
   font-size: 40px;
   font-weight: 500;
   line-height: 1.17;
@@ -1339,7 +1342,7 @@ header {
   display: none;
 }
 @media screen and (max-width: 767px) {
-  .mobile-nav {
+  .mobile-nav__list {
     display: block;
   }
 }
@@ -1358,7 +1361,7 @@ header {
 }
 
 .mobile-contacts {
-  margin-top: 302px;
+  margin-top: auto;
 }
 
 .mobile-contacts__item:not(:last-child) {
