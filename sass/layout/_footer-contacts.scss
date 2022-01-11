@@ -1,0 +1,32 @@
+.footer-contacts {
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+    text-align: left;
+  }
+}
+
+.footer-contacts__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-contacts__adress {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  font-style: normal;
+  color: #ffffff;
+}
+
+.footer-contacts__link {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #acacb0;
+  text-decoration: none;
+  transition: color var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--brand-color-focus);
+  }
+}

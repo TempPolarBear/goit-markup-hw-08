@@ -1,0 +1,19 @@
+.footer {
+  background-color: var(--brand-background-color);
+  padding: 60px 0;
+}
+
+.footer-container {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+    // padding: 0 215px;
+  }
+}
